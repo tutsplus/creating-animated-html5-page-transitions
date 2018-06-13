@@ -1,0 +1,139 @@
+body, html {
+    font-family: Raleway, sans-serif;
+    color: #555;
+}
+
+body {
+    border-top: 4px solid #92a833;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#timeofday {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #eee;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+#main-header {
+    height: 70px;
+}
+
+#logo { width: 250px; }
+
+#main-nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#main-nav-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: 70px;
+    margin: 0;
+    padding-left: 0;
+    position: relative;
+}
+
+#nav-underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #b44f79;
+    transition: all .3s;
+}
+
+#main-nav-menu > li {
+    height: 70px;
+}
+
+#main-nav-menu > li > a {
+    color: #92a833;
+    text-decoration: none;
+    padding: 0 10px;
+    height: 70px;
+    line-height: 70px;
+    display: block;
+}
+
+#page-home #hero-image {
+    background: url('../images/pink-flowers.jpg') center -100px no-repeat;
+    background-size: cover;
+}
+
+#page-join #hero-image {
+    background: url('../images/tree-flowers.jpg') center -100px no-repeat;
+    background-size: cover;
+}
+
+#hero-image {
+    height: 300px;
+    position: relative;
+    box-shadow: inset 0 0 30px rgba(0,0,0,.7);
+}
+
+#hero-image h2, #hero-image h4 {
+    position: absolute;
+    font-weight: normal;
+    top: 100px;
+    left: 0;
+    color: #fff;
+    background-color: #b44f79;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+#hero-image h4 {
+    top: 150px;
+    background-color: #92a833;
+}
+
+#benefits {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#benefits .card {
+    margin-right: 20px;
+}
+
+#benefits .card:last-child {
+    margin-right: 0;
+}
+
+#benefits .card-header {
+    display: flex;
+}
+
+#benefits .card-header h3 { margin: 0; }
+
+.card-image img { width: 100%; }
+
+#benefits .card-header .fa {
+    margin-right: 10px;
+    color: #fff;
+    background-color: #555;
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+}
